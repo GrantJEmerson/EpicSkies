@@ -1,0 +1,20 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "700d0875ef9f4fa61602cc5cd450aa60"
+build_time: [1506737032, 927411000]
+inputs:
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/EpicSkies/Model/Sky.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/Extensions/Extensions.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/EpicSkies/Controllers/AppDelegate.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/EpicSkies/Custom Segues/FadeInSegue.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/EpicSkies/Controllers/SplashScreenViewController.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/EpicSkies/Model/Constants.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/EpicSkies/Controllers/NewSkyCreatorTableViewController.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/EpicSkies/Controllers/LocationSetterViewController.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/EpicSkies/Controllers/SkyTableViewCell.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/EpicSkies/Controllers/Sky Table View Controllers/AllSkiesTableViewController.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/EpicSkies/Controllers/SortDescriptorTableViewController.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/EpicSkies/Controllers/Sky Table View Controllers/MySkiesTableViewController.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/EpicSkies/Model/SkyImageFullResolution.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/Services/Services.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/EpicSkies/Controllers/SkyViewController.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/EpicSkies/Controllers/LocationsSearchTable.swift": [9223372036, 854775807]

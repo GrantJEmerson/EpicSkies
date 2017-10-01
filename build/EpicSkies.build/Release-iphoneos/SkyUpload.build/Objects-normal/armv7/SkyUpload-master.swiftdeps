@@ -1,0 +1,11 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "20a93ab22ae5993fba91d8107f6784d7"
+build_time: [1506737012, 963026000]
+inputs:
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/Extensions/Extensions.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/EpicSkies/Model/SkyImageFullResolution.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/SkyUpload/Controllers/SkyTypeTableViewController.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/SkyUpload/Controllers/ShareViewController.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/Services/Services.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/EpicSkies/Model/Sky.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/EpicSkies/Model/Constants.swift": [9223372036, 854775807]

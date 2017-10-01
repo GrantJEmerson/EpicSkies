@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sky Show-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="SkyImageSlideShowViewController" customModule="EpicSkiesAppleTVExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" maximumZoomScale="10" translatesAutoresizingMaskIntoConstraints="NO" id="rje-HF-MRL">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pef-qg-Bte">
+                                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Pef-qg-Bte" firstAttribute="leading" secondItem="rje-HF-MRL" secondAttribute="leading" id="3jq-xH-wby"/>
+                                    <constraint firstItem="Pef-qg-Bte" firstAttribute="centerY" secondItem="rje-HF-MRL" secondAttribute="centerY" id="Dn6-7J-8jL"/>
+                                    <constraint firstItem="Pef-qg-Bte" firstAttribute="centerX" secondItem="rje-HF-MRL" secondAttribute="centerX" id="IFh-8y-J46"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pef-qg-Bte" secondAttribute="bottom" id="ZYi-FJ-E6c"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pef-qg-Bte" secondAttribute="trailing" id="eHn-uW-2Z4"/>
+                                    <constraint firstItem="Pef-qg-Bte" firstAttribute="top" secondItem="rje-HF-MRL" secondAttribute="top" id="ubb-4P-J85"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="ltm-Hw-of8"/>
+                                </connections>
+                            </scrollView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Q6E-sa-saF">
+                                <rect key="frame" x="928" y="508" width="64" height="64"/>
+                                <color key="color" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            </activityIndicatorView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgZ-yn-059">
+                                <rect key="frame" x="40" y="969" width="1840" height="91"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rje-HF-MRL" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="27n-xY-PbN"/>
+                            <constraint firstItem="SgZ-yn-059" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="20" id="DSB-vQ-Dsn"/>
+                            <constraint firstItem="rje-HF-MRL" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="LbG-ks-seE"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="SgZ-yn-059" secondAttribute="bottom" constant="20" id="NDS-ZG-AOP"/>
+                            <constraint firstAttribute="trailing" secondItem="rje-HF-MRL" secondAttribute="trailing" id="P3j-9l-AXG"/>
+                            <constraint firstItem="Q6E-sa-saF" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="ZZk-c4-4Cc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SgZ-yn-059" secondAttribute="trailing" constant="20" id="myq-dB-EQ5"/>
+                            <constraint firstItem="Q6E-sa-saF" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="qTM-Hu-fwV"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="rje-HF-MRL" secondAttribute="bottom" id="xSj-GH-pzg"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Sky Show" image="AllSkiesIcon" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Q6E-sa-saF" id="sk1-lA-Dfi"/>
+                        <outlet property="imageView" destination="Pef-qg-Bte" id="MqE-mM-Xzq"/>
+                        <outlet property="scrollView" destination="rje-HF-MRL" id="0y4-Vp-YNQ"/>
+                        <outlet property="skyNameAndDateLabel" destination="SgZ-yn-059" id="8ZW-Nd-wc8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2246" y="-640"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="OgJ-RP-bQ4">
+            <objects>
+                <viewController id="9gn-tC-gFG" customClass="SettingsViewController" customModule="EpicSkiesAppleTVExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bHm-AL-1vL"/>
+                        <viewControllerLayoutGuide type="bottom" id="tul-01-3AE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ckr-vj-Gj4">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dOv-YG-iX9">
+                                <rect key="frame" x="759" y="246" width="402" height="588"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="kfY-Ka-3Cn">
+                                        <rect key="frame" x="0.0" y="0.0" width="402" height="202"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sky Type:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWT-bC-ViC">
+                                                <rect key="frame" x="118" y="0.0" width="167" height="50"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yXU-rC-ep4" customClass="TVPickerView" customModule="EpicSkiesAppleTVExtension" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="74" width="402" height="128"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="RzH-B4-h8O"/>
+                                                    <constraint firstAttribute="width" constant="402" id="UaK-zQ-KLF"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="3a8-6Q-OjE">
+                                        <rect key="frame" x="0.0" y="222" width="402" height="196"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Name And Date:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5s-41-FHf">
+                                                <rect key="frame" x="0.0" y="0.0" width="402" height="86"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YjS-qt-jRx">
+                                                <rect key="frame" x="126" y="110" width="150" height="86"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="OP2-Sm-xuE"/>
+                                                </constraints>
+                                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                                <state key="normal" title="On">
+                                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="changeShowNameAndDateProperty:" destination="9gn-tC-gFG" eventType="primaryActionTriggered" id="HvL-0p-JiN"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="dPK-jF-dCS">
+                                        <rect key="frame" x="0.0" y="438" width="402" height="150"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seconds Per Sky:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2c-BM-9Ve">
+                                                <rect key="frame" x="53" y="0.0" width="296" height="69"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="38"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rbi-3K-jiM">
+                                                <rect key="frame" x="27" y="81" width="348" height="70"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="calibratedWhite"/>
+                                                <segments>
+                                                    <segment title="5"/>
+                                                    <segment title="8"/>
+                                                    <segment title="10"/>
+                                                    <segment title="12"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="secondsChanged:" destination="9gn-tC-gFG" eventType="valueChanged" id="BKQ-IE-ttv"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3a8-6Q-OjE" secondAttribute="trailing" id="PMu-FD-pCT"/>
+                                    <constraint firstItem="dPK-jF-dCS" firstAttribute="leading" secondItem="dOv-YG-iX9" secondAttribute="leading" id="VLx-Zv-J3x"/>
+                                    <constraint firstItem="kfY-Ka-3Cn" firstAttribute="leading" secondItem="dOv-YG-iX9" secondAttribute="leading" id="fwB-k5-HRd"/>
+                                    <constraint firstAttribute="trailing" secondItem="dPK-jF-dCS" secondAttribute="trailing" id="jmu-ep-1EU"/>
+                                    <constraint firstItem="3a8-6Q-OjE" firstAttribute="leading" secondItem="dOv-YG-iX9" secondAttribute="leading" id="lF9-mo-yt3"/>
+                                    <constraint firstAttribute="trailing" secondItem="kfY-Ka-3Cn" secondAttribute="trailing" id="pY6-X8-MKA"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="dOv-YG-iX9" firstAttribute="centerY" secondItem="ckr-vj-Gj4" secondAttribute="centerY" id="LcV-Ag-sx7"/>
+                            <constraint firstItem="dOv-YG-iX9" firstAttribute="centerX" secondItem="ckr-vj-Gj4" secondAttribute="centerX" id="Nyc-se-whN"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="SettingsButton" id="NUx-RP-QkX"/>
+                    <connections>
+                        <outlet property="secondsPerSkyControl" destination="rbi-3K-jiM" id="k8c-pr-Asf"/>
+                        <outlet property="showNameAndDateSwitch" destination="YjS-qt-jRx" id="kX8-gz-3lb"/>
+                        <outlet property="skyTypePicker" destination="yXU-rC-ep4" id="T44-lh-MTC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vdf-3j-aTE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2246" y="655"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="120"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="barTintColor" red="0.52941176469999995" green="0.80784313730000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="9gn-tC-gFG" kind="relationship" relationship="viewControllers" id="i8L-N6-mWN"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AllSkiesIcon" width="30" height="17"/>
+        <image name="SettingsButton" width="30" height="30"/>
+    </resources>
+</document>

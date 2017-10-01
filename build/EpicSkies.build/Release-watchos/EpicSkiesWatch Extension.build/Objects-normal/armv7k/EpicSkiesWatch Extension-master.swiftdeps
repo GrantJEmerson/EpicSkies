@@ -1,0 +1,13 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "e51d5a17c7d6875e6cb70daa6e20e0c7"
+build_time: [1506737023, 963086000]
+inputs:
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/EpicSkies/Model/Sky.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/EpicSkiesWatch Extension/Controllers/ExtensionDelegate.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/EpicSkiesWatch Extension/Controllers/SkyDetailViewController.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/Extensions/Extensions.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/EpicSkiesWatch Extension/Controllers/skyRowController.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/Services/Services.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/EpicSkies/Model/SkyImageFullResolution.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/EpicSkiesWatch Extension/Controllers/InterfaceController.swift": [9223372036, 854775807]
+  "/Users/grantemerson/Documents/Xcode_Projects/EpicSkies/EpicSkiesWatch Extension/Controllers/SkyLocationInterfaceController.swift": [9223372036, 854775807]

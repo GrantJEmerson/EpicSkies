@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13196" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13051"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Milkshake.ttf">
+            <string>Milkshake</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--EpicSkies-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="EpicSkies" title="EpicSkies" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="EpicSkiesWatch" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" pagingScroll="YES" id="Brt-eM-keR">
+                            <items>
+                                <tableRow identifier="skyRowController" id="Ton-2z-aM4" customClass="skyRowController" customModule="EpicSkiesWatch_Extension">
+                                    <group key="rootItem" width="1" height="1" alignment="left" contentMode="scaleAspectFill" layout="vertical" id="ziI-ng-YeU">
+                                        <items>
+                                            <group width="1" alignment="left" radius="4" id="0Jl-QA-H1b">
+                                                <items>
+                                                    <label width="0.80000000000000004" alignment="left" text="The Blue Sky" id="7kN-3z-I4n">
+                                                        <fontDescription key="font" type="system" weight="medium" pointSize="13"/>
+                                                    </label>
+                                                    <label width="0.20000000000000001" alignment="left" text="1w" textAlignment="right" id="hdH-ZQ-KET">
+                                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                        <fontDescription key="font" type="system" pointSize="13"/>
+                                                    </label>
+                                                </items>
+                                                <color key="backgroundColor" red="0.2741315038071066" green="0.2741315038071066" blue="0.2741315038071066" alpha="0.8786922089041096" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </group>
+                                            <imageView width="1" height="0.90000000000000002" alignment="left" image="DummyImage" id="joO-Y8-OkZ"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="myImageView" destination="joO-Y8-OkZ" id="Vjr-Dm-NeJ"/>
+                                        <outlet property="skyDateLabel" destination="hdH-ZQ-KET" id="CCN-8u-xG6"/>
+                                        <outlet property="skyNameLabel" destination="7kN-3z-I4n" id="mIs-LB-oH3"/>
+                                        <segue destination="gD4-ND-gGd" kind="push" identifier="presentSky" id="IX9-ew-Shw"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="LoadMore" id="UVa-AZ-We1">
+                                    <group key="rootItem" width="1" alignment="left" id="kee-fl-sAX">
+                                        <items>
+                                            <label width="1" height="1" alignment="left" text="Load More" textAlignment="center" id="uMU-9s-ss0">
+                                                <fontDescription key="font" name="Milkshake" family="Milkshake" pointSize="18"/>
+                                            </label>
+                                        </items>
+                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="Brt-eM-keR" id="v3D-8O-aCC"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="162.15384615384616" y="168.69230769230771"/>
+        </scene>
+        <!--Details-->
+        <scene sceneID="BiI-Rr-xdX">
+            <objects>
+                <controller identifier="Details" title="Details" id="gD4-ND-gGd" customClass="SkyDetailViewController" customModule="EpicSkiesWatch" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="16" id="u1v-pH-s21">
+                            <items>
+                                <group width="1" height="46" alignment="left" spacing="6" id="NKS-XM-BPD">
+                                    <items>
+                                        <imageView width="0.29999999999999999" height="1" alignment="left" image="DummyImage" contentMode="scaleAspectFill" id="HCr-TS-TqQ"/>
+                                        <label width="0.69999999999999996" height="1" alignment="left" text="Sky Name" numberOfLines="2" id="doc-Zu-74s">
+                                            <fontDescription key="font" type="system" pointSize="16"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" layout="vertical" id="rTl-R7-Qmh">
+                                    <items>
+                                        <label alignment="left" text="Location" id="WZt-ue-Ggg">
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                        </label>
+                                        <label width="1" height="44" alignment="left" text="Unknown" textAlignment="left" numberOfLines="2" id="FbP-qe-5ba">
+                                            <fontDescription key="font" type="system" weight="thin" pointSize="17"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" layout="vertical" id="JGW-x2-MMo">
+                                    <items>
+                                        <label alignment="left" text="Type" id="fBq-e9-knl">
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                        </label>
+                                        <label width="1" alignment="left" text="Clouds" textAlignment="left" id="OVM-Be-i0k">
+                                            <fontDescription key="font" type="system" weight="thin" pointSize="17"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" layout="vertical" id="XqX-Yo-Ofs">
+                                    <items>
+                                        <label alignment="left" text="Date" id="2cM-Ax-M0X">
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                        </label>
+                                        <label width="1" alignment="left" text="Jan 1, 2017" textAlignment="left" id="9yt-8i-2OV">
+                                            <fontDescription key="font" type="system" weight="thin" pointSize="17"/>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="yC1-UH-5nf">
+                            <items>
+                                <button width="1" alignment="left" title="View Location" id="pGQ-yR-HZU">
+                                    <connections>
+                                        <segue destination="FR7-AS-2WL" kind="push" identifier="showMap" id="xzW-bI-cLc"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="skyDateLabel" destination="9yt-8i-2OV" id="LQx-wA-Ldn"/>
+                        <outlet property="skyImageView" destination="HCr-TS-TqQ" id="4RY-gQ-AXV"/>
+                        <outlet property="skyLocationLabel" destination="FbP-qe-5ba" id="Vjg-Jn-eMV"/>
+                        <outlet property="skyNameLabel" destination="doc-Zu-74s" id="bhK-nx-Q5B"/>
+                        <outlet property="skyTypeLabel" destination="OVM-Be-i0k" id="BVP-M4-2iu"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="389" y="168"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="5fr-g1-EMW">
+            <objects>
+                <controller title="Map" id="FR7-AS-2WL" customClass="SkyLocationInterfaceController" customModule="EpicSkiesWatch" customModuleProvider="target">
+                    <items>
+                        <map width="1" height="1" alignment="left" id="Qn1-Pa-ALd"/>
+                    </items>
+                    <connections>
+                        <outlet property="mapView" destination="Qn1-Pa-ALd" id="RIB-be-5En"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="635" y="169"/>
+        </scene>
+    </scenes>
+</document>

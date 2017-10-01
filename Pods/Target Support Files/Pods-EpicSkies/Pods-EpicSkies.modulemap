@@ -1,0 +1,6 @@
+framework module Pods_EpicSkies {
+  umbrella header "Pods-EpicSkies-umbrella.h"
+
+  export *
+  module * { export * }
+}
