@@ -27,7 +27,7 @@ Features:
 
 ### Screenshots of the App
 
-![Screenshots of iOS App]()
+![Screenshots of iOS App](http://is1.mzstatic.com/image/thumb/Purple118/v4/1e/4c/a7/1e4ca796-0e86-0796-d33e-5be3e2a5580e/source/392x696bb.jpg)
 
 ### Got Bugs?
 
